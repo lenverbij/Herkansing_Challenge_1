@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css" type="text/css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+        <script src="mainscript.js"></script>
+        <title>Dashboard SpaceX</title>
+    </head>
+    <body>
+		<!--header van de website en het menu-->
+        <header>
+            <figure>
+			<a href="#home"><img src="images/spacex.png" class="logo"/></a>
+			</figure>
+			<div class="menu">
+				<a href="#food">Food</a>
+				<a href="#water">Water</a>
+				<a href="#fuel">Fuel</a>
+				<a href="#fuel">Distance</a>
+			</div>
+			<div>
+			<p class="welcome">Welcome to the SpaceX  shuttle, here is your flight information.</p>
+			</div>
+        </header>
+		<!--main van de pagina bevat de content-->
+        <main>
+           <article class="food">
+                <h2>Food</h2>
+                <canvas id="food"></canvas>
+            </article>
+            <article class="water">
+                <h2>Water</h2>
+                <canvas id="water"></canvas>
+            </article>	
+			<article class="fuel">
+                <h2>Fuel</h2>
+                <canvas id="fuel"></canvas>
+            </article>	
+            <article class="distance">
+                <h2>Distance</h2>
+                <canvas id="distance"></canvas>
+            </article>
+        </main>
+		<!-- Footer van de website -->
+		<footer>
+			<div class="footer">
+				<a href="#food">Food</a>
+				<a href="#water">Water</a>
+				<a href="#fuel">Fuel</a>
+				<a href class="distance"="#distance">Distance</a>
+			</div>
+		</footer>
+    </body>
+	<script src="mainscript.js"></script>
+</html>
